@@ -16,7 +16,7 @@ node('master')
     {
         git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
         sh 'java -jar testing.jar'
-        sh 'java -jar /var/lib/.jenkins/workspace/ScriptedPipeline/testing.jar'
+        sh 'java -jar /home/node/.jenkins/workspace/ScriptedPipeline/testing.jar'
     }
     stage('ContinuousDelivery')
     {
