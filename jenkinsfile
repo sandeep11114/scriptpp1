@@ -15,7 +15,7 @@ node('master')
     stage('ContinuousTesting')
     {
         git 'https://github.com/selenium-saikrishna/testing.git'
-        sh 'java -jar /var/lib/jenkins/workspace/ScriptedPipeline/testing.jar'
+        sh 'java -jar /var/lib/.jenkins/workspace/ScriptedPipeline/testing.jar'
     }
     stage('ContinuousDelivery')
     {
